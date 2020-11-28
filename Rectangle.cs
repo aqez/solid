@@ -4,6 +4,8 @@ namespace SOLID
     {
         int Width { get; set; }
         int Height { get; set; }
+
+        int Area => Width * Height;
     }
 
     public class Rectangle : IRectangle
