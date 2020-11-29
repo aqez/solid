@@ -15,6 +15,11 @@ namespace SOLID
     }
 
 
+    /// <summary>
+    /// This class violates the Liskov Substitution Principle because when acting
+    /// upon an IRectangle, the user does not necessarily expect the width and height
+    /// to both change upon only changing one of them.
+    /// </summary>
     public class Square : IRectangle
     {
         private int _sideLength;
